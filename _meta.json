@@ -1,0 +1,14 @@
+{
+  "name": "paperclip-lecture-presentation-markdown",
+  "slug": "lecture-presentation-markdown",
+  "version": "1.0.0",
+  "visibility": "public",
+  "channels": [
+    "github",
+    "paperclip"
+  ],
+  "install": {
+    "entrypoint": "skills/lecture-presentation-markdown/SKILL.md",
+    "githubRepo": "https://github.com/fob92/paperclip-lecture-presentation-markdown"
+  }
+}
