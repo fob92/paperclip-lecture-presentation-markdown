@@ -4,12 +4,16 @@ import fs from 'node:fs';
 
 const skill = fs.readFileSync(new URL('../skills/lecture-presentation-markdown/SKILL.md', import.meta.url), 'utf8');
 
-test('skill has valid frontmatter shape', () => {
-  assert.match(skill, /^---\n/);
-  assert.match(skill, /\n---\n\n#/);
-  assert.match(skill, /name: lecture-presentation-markdown/);
-  assert.match(skill, /description:/);
-  assert.match(skill, /license: MIT/);
+test('skill has minimal valid frontmatter shape', () => {
+  const match = skill.match(/^---\n([\s\S]*?)\n---\n\n#/);
+  assert.ok(match, 'frontmatter block missing or malformed');
+  const frontmatter = match[1];
+  assert.match(frontmatter, /^name: lecture-presentation-markdown$/m);
+  assert.match(frontmatter, /^description: ".+"$/m);
+  assert.doesNotMatch(frontmatter, /^version:/m);
+  assert.doesNotMatch(frontmatter, /^author:/m);
+  assert.doesNotMatch(frontmatter, /^license:/m);
+  assert.doesNotMatch(frontmatter, /^tags:/m);
 });
 
 test('skill references paperclip companion files', () => {

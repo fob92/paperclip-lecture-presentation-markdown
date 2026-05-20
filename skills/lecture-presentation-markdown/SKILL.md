@@ -1,16 +1,6 @@
 ---
 name: lecture-presentation-markdown
-version: "1.0.0"
-description: >
-  Paperclip skill for turning lecture, workshop, and training content into strong Markdown slide decks and speaker notes.
-author: fob92
-license: MIT
-tags:
-  - paperclip
-  - presentations
-  - markdown
-  - teaching
-  - slides
+description: "Paperclip skill for turning lecture, workshop, and training content into strong Markdown slide decks and speaker notes."
 ---
 
 # Lecture Presentation Markdown
