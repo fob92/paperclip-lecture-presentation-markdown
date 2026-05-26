@@ -1,0 +1,52 @@
+{
+  "title": "Decision-ready executive headline",
+  "subtitle": "Context line with scope and timeframe",
+  "hero_image_direction": "Abstract architectural or business visual with restrained premium tone",
+  "executive_summary": [
+    "Key conclusion in one sentence",
+    "Commercial or operational impact",
+    "Primary risk or constraint",
+    "Recommendation",
+    "Immediate next step"
+  ],
+  "sections": [
+    {
+      "type": "section-divider",
+      "title": "Why this matters now",
+      "subtitle": "Short transition line"
+    },
+    {
+      "type": "one-column",
+      "title": "Current situation requires a controlled decision",
+      "bullets": [
+        "Bullet one",
+        "Bullet two",
+        "Bullet three"
+      ]
+    },
+    {
+      "type": "two-column",
+      "title": "Compare options clearly",
+      "left_title": "Option A",
+      "left_bullets": ["Point A1", "Point A2", "Point A3"],
+      "right_title": "Option B",
+      "right_bullets": ["Point B1", "Point B2", "Point B3"]
+    },
+    {
+      "type": "two-column-image",
+      "title": "Use proof visuals intentionally",
+      "left_title": "Interpretation",
+      "left_bullets": ["Insight one", "Insight two", "Insight three"],
+      "image_instruction": "Use a supporting chart, mockup, or evidence visual"
+    }
+  ],
+  "next_steps": [
+    "Decision owner confirms direction",
+    "Execution starts with named owner",
+    "Follow-up review date is fixed"
+  ],
+  "handoff": {
+    "target_agent_role": "slides execution agent",
+    "reason": "Paperclip skill packages do not upload to Google Slides by themselves"
+  }
+}

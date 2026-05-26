@@ -17,7 +17,7 @@ test('skill has minimal valid frontmatter shape', () => {
 });
 
 test('skill references paperclip companion files', () => {
-  for (const rel of ["references/templates/deck-outline.md","references/templates/lecture-deck.md","references/templates/speaker-notes.md","references/checklists/slide-quality.md","references/checklists/delivery-readiness.md","references/examples/example-lecture-deck.md","assets/STYLE-GUIDE.md"]) {
+  for (const rel of ["references/templates/deck-outline.md","references/templates/lecture-deck.md","references/templates/speaker-notes.md","references/templates/board-outline.md","references/templates/board-deck-input.json","references/checklists/slide-quality.md","references/checklists/delivery-readiness.md","references/checklists/board-slide-quality.md","references/examples/example-lecture-deck.md","assets/STYLE-GUIDE.md"]) {
     assert.equal(fs.existsSync(new URL('../skills/lecture-presentation-markdown/' + rel, import.meta.url)), true, rel);
   }
 });
