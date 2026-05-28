@@ -5,9 +5,15 @@
   "type": "module",
   "description": "Paperclip skill for turning lecture, workshop, and training content into strong Markdown slide decks and speaker notes.",
   "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "_meta.json",
+    "skills/lecture-presentation-markdown"
+  ],
   "scripts": {
     "test": "node --test",
     "check": "node --check skills/lecture-presentation-markdown/SKILL.md >/dev/null 2>&1 || true && node --check tests/validate-skill.test.mjs",
-    "validate": "npm test"
+    "validate": "npm run check && npm test && npm pack --dry-run >/dev/null"
   }
 }
